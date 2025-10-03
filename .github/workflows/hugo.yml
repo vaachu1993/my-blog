@@ -52,7 +52,14 @@ jobs:
         run: |
           hugo \
             --minify \
-            --environment production          
+            --environment production \
+            --baseURL "https://vaachu1993.github.io/my-blog/"
+      - name: List public directory contents
+        run: |
+          echo "Contents of public directory:"
+          ls -la public/
+          echo "Index.html exists?"
+          ls -la public/index.html || echo "index.html not found"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
