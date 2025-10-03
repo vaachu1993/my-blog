@@ -1,4 +1,4 @@
-baseURL = 'https://vaachu1993.github.io/my-blog-site/'
+baseURL = 'https://vaachu1993.github.io/my-blog/'
 languageCode = 'vi-vn'
 title = 'Blog Lập trình'
 theme = 'pehtheme-hugo'
